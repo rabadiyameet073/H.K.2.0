@@ -1,0 +1,3390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From Chemicals to Change | Executive Presentation Deck</title>
+  <meta name="description"
+    content="Sustainable, Protected, and High-Margin Agriculture for Indian & Gujarat Farmers. 16-Slide Professional Deck.">
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif) & Plus Jakarta Sans (Clean Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-cream: #FAF6EB;
+      --bg-cream-card: #FDF0C8;
+      --bg-cream-alt: #FFFBEB;
+      --bg-light-green: #E3EFD3;
+      --green-dark: #124D24;
+      --green-mid: #1B7332;
+      --green-accent: #2E8B57;
+      --green-bright: #95D430;
+      --dark-charcoal: #18191C;
+      --text-muted: #52555A;
+      --text-light-muted: #787C84;
+      --brown-accent: #873C27;
+      --orange-accent: #D9542A;
+      --red-alert: #D32F2F;
+      --dark-slide-bg: #111317;
+      --border-subtle: #E2DCCF;
+      --border-green: #C6E0BF;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #E8E4DA;
+      color: var(--dark-charcoal);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ============================================================
+       TOP APPLICATION TOOLBAR (Clean Corporate Header)
+       ============================================================ */
+    .app-toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(18, 77, 36, 0.98);
+      backdrop-filter: blur(14px);
+      color: white;
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo-badge {
+      width: 36px;
+      height: 36px;
+      background: #2E8B57;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 800;
+      font-size: 15px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .brand-titles h1 {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+      color: #FFFFFF;
+    }
+
+    .brand-titles p {
+      font-size: 11px;
+      opacity: 0.85;
+      font-weight: 400;
+      color: #E2EED8;
+    }
+
+    .toolbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    /* Navigation in Toolbar */
+    .nav-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 0, 0, 0.28);
+      padding: 4px 8px;
+      border-radius: 9px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .slide-counter {
+      font-size: 12px;
+      font-weight: 700;
+      min-width: 65px;
+      text-align: center;
+      letter-spacing: 0.5px;
+      color: #FFF;
+    }
+
+    select.slide-select {
+      background: rgba(255, 255, 255, 0.15);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 6px 10px;
+      border-radius: 7px;
+      font-size: 12px;
+      font-weight: 500;
+      outline: none;
+      cursor: pointer;
+      max-width: 250px;
+    }
+
+    select.slide-select option {
+      background: #124D24;
+      color: white;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      background: rgba(255, 255, 255, 0.12);
+      color: white;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      text-decoration: none;
+      user-select: none;
+    }
+
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: translateY(-1px);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    .btn-gold {
+      background: #F8D880;
+      color: #3B2A0A;
+      border: 1px solid #FFE494;
+      font-weight: 700;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+    }
+
+    .btn-gold:hover {
+      background: #FFE494;
+      color: #261902;
+    }
+
+    .btn-edit-active {
+      background: #D9542A !important;
+      color: white !important;
+      border-color: #FF7E55 !important;
+      box-shadow: 0 0 0 3px rgba(217, 84, 42, 0.4) !important;
+      animation: pulseEdit 1.6s infinite;
+    }
+
+    @keyframes pulseEdit {
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 0 rgba(217, 84, 42, 0.6);
+      }
+
+      50% {
+        box-shadow: 0 0 0 7px rgba(217, 84, 42, 0);
+      }
+    }
+
+    /* Editable active visual highlight */
+    [contenteditable="true"] {
+      outline: 2px dashed rgba(217, 84, 42, 0.75) !important;
+      outline-offset: 3px !important;
+      cursor: text !important;
+      background-color: rgba(255, 235, 204, 0.25) !important;
+      border-radius: 4px;
+      transition: background-color 0.2s;
+    }
+
+    [contenteditable="true"]:hover {
+      background-color: rgba(255, 235, 204, 0.45) !important;
+    }
+
+    /* ============================================================
+       MAIN CONTAINER & PRESENTATION ENGINE
+       ============================================================ */
+    .main-container {
+      flex: 1;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 1480px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .presentation-stage {
+      width: 100%;
+      max-width: 1240px;
+      aspect-ratio: 16 / 9;
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22), 0 4px 14px rgba(0, 0, 0, 0.06);
+      background: white;
+      container-type: inline-size;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Fullscreen presentation styles */
+    body.is-presenting {
+      overflow: hidden;
+      background: #0B0D10;
+    }
+
+    body.is-presenting .app-toolbar {
+      display: none;
+    }
+
+    body.is-presenting .main-container {
+      padding: 0;
+      max-width: none;
+      width: 100vw;
+      height: 100vh;
+      background: #0B0D10;
+    }
+
+    body.is-presenting .presentation-stage {
+      max-width: min(100vw, 177.78vh);
+      max-height: min(100vh, 56.25vw);
+      border-radius: 0;
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+      margin: auto;
+    }
+
+    /* Floating presentation HUD in fullscreen */
+    .fullscreen-hud {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2000;
+      background: rgba(18, 22, 28, 0.88);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 30px;
+      padding: 6px 16px;
+      display: none;
+      align-items: center;
+      gap: 12px;
+      color: white;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    body.is-presenting .fullscreen-hud {
+      display: flex;
+    }
+
+    .fullscreen-hud.hud-visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .hud-btn {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: white;
+      border-radius: 20px;
+      padding: 5px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .hud-btn:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: translateY(-1px);
+    }
+
+    .hud-counter {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      min-width: 55px;
+      text-align: center;
+    }
+
+    .hud-exit {
+      background: rgba(217, 84, 42, 0.7);
+      border-color: rgba(217, 84, 42, 0.9);
+    }
+
+    .hud-exit:hover {
+      background: rgba(217, 84, 42, 0.95);
+    }
+
+    /* ============================================================
+       BASE SLIDE CANVAS (Unified Container-Query Engine)
+       ============================================================ */
+    .slide-canvas {
+      position: absolute !important;
+      inset: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      background: var(--bg-cream);
+      box-sizing: border-box;
+      font-size: 2.22cqw;
+      visibility: hidden;
+      opacity: 0;
+      transform: scale(0.985);
+      pointer-events: none;
+      transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+        visibility 0.35s;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .slide-canvas.active {
+      visibility: visible;
+      opacity: 1;
+      transform: scale(1);
+      pointer-events: auto;
+      z-index: 2;
+    }
+
+    .serif-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.06;
+    }
+
+    .slide-num {
+      position: absolute;
+      font-size: 0.82em;
+      font-weight: 800;
+      color: #8C8275;
+      z-index: 20;
+      letter-spacing: 1px;
+    }
+
+    .slide-num.top-left {
+      top: 6.5%;
+      left: 7%;
+    }
+
+    .slide-num.bottom-left {
+      bottom: 5%;
+      left: 5%;
+    }
+
+    .citation-note {
+      font-size: 0.62em;
+      color: var(--text-light-muted);
+      letter-spacing: 0.2px;
+    }
+
+    /* Fallback image styling so missing images never break layouts */
+    .img-fallback {
+      background: linear-gradient(135deg, #1A4D2E 0%, #2F5D3A 50%, #153B23 100%) !important;
+    }
+
+    /* ============================================================
+       SLIDE 01 (REFINED & FIXED)
+       ============================================================ */
+    .slide-01 {
+      display: grid;
+      grid-template-columns: 48% 52%;
+      grid-template-rows: 1fr;
+      height: 100%;
+      background: #FAF6EB;
+      gap: 0;
+      align-items: stretch;
+    }
+
+    .slide-01 .left-col {
+      padding: 7% 6% 6% 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.0em;
+      position: relative;
+      z-index: 2;
+    }
+
+    .slide-01 .slide-num {
+      position: static;
+      font-size: 0.85em;
+      font-weight: 800;
+      color: #8C8275;
+      letter-spacing: 1.5px;
+      display: block;
+      margin-bottom: -0.35em;
+    }
+
+    .slide-01 .tag-top {
+      font-size: 0.72em;
+      color: var(--brown-accent);
+      line-height: 1.3;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+    }
+
+    .slide-01 .main-heading {
+      font-size: 2.85em;
+      line-height: 1.04;
+    }
+
+    .slide-01 .word-from {
+      color: var(--green-mid);
+      display: block;
+    }
+
+    .slide-01 .word-chem {
+      color: var(--green-dark);
+      display: block;
+      font-weight: 800;
+    }
+
+    .slide-01 .word-change {
+      color: var(--dark-charcoal);
+      display: block;
+    }
+
+    .slide-01 .sub-text {
+      font-size: 1.05em;
+      color: #383838;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    .slide-01 .cta-pill {
+      display: inline-flex;
+      align-items: center;
+      background: white;
+      padding: 0.5em 1.0em;
+      border-radius: 40px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+      width: fit-content;
+      gap: 1.0em;
+      margin-top: 0.3em;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .slide-01 .pill-text {
+      font-size: 0.84em;
+      font-weight: 700;
+      color: #333;
+      line-height: 1.25;
+    }
+
+    .slide-01 .pill-arrow {
+      width: 2.0em;
+      height: 2.0em;
+      background: var(--dark-charcoal);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      padding: 0.45em;
+    }
+
+    .slide-01 .pill-arrow svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .slide-01 .right-col {
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+      background: #25462D;
+    }
+
+    .slide-01 .right-col img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+      display: block;
+    }
+
+    .slide-01 .right-col .overlay-badge {
+      position: absolute;
+      bottom: 6.5%;
+      left: 6.5%;
+      right: 6.5%;
+      text-align: center;
+      font-size: 0.82em;
+      font-weight: 700;
+      color: white;
+      background: rgba(18, 77, 36, 0.92);
+      backdrop-filter: blur(12px);
+      padding: 0.7em 1.2em;
+      border-radius: 10px;
+      line-height: 1.35;
+      letter-spacing: 0.4px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+      z-index: 5;
+    }
+
+    /* ============================================================
+       SLIDE 02 (REFINED & FIXED)
+       ============================================================ */
+    .slide-02 {
+      background: var(--dark-slide-bg);
+      color: white;
+      display: grid;
+      grid-template-columns: 53% 47%;
+      grid-template-rows: 1fr;
+      height: 100%;
+      align-items: stretch;
+    }
+
+    .slide-02 .slide-num {
+      position: static;
+      font-size: 0.85em;
+      font-weight: 800;
+      color: rgba(255, 255, 255, 0.5);
+      letter-spacing: 1.5px;
+      display: block;
+      margin-bottom: 0.35em;
+    }
+
+    .slide-02 .left-content {
+      padding: 5% 5% 4.5% 7%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.75em;
+    }
+
+    .slide-02 .title-area h2 {
+      font-size: 2.25em;
+      color: white;
+      line-height: 1.1;
+    }
+
+    .slide-02 .highlight-red {
+      color: var(--orange-accent);
+    }
+
+    .slide-02 .desc-text {
+      font-size: 0.9em;
+      color: #B5B8C0;
+      line-height: 1.4;
+      margin-top: 0.25em;
+    }
+
+    .slide-02 .risk-factors-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0.5em;
+      margin-top: 0.3em;
+      width: 100%;
+    }
+
+    .slide-02 .risk-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 10px;
+      padding: 0.55em 0.2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 0.35em;
+      min-height: 5.0em;
+      position: relative;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    }
+
+    .slide-02 .risk-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.28);
+      transform: translateY(-2px);
+    }
+
+    .slide-02 .risk-card-icon {
+      width: 2.1em;
+      height: 2.1em;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      padding: 0.45em;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .slide-02 .risk-card-icon svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .slide-02 .risk-card-title {
+      font-size: 0.65em;
+      color: #D6D8DE;
+      line-height: 1.2;
+      font-weight: 600;
+      text-align: center;
+      width: 100%;
+    }
+
+    .slide-02 .risk-card.risk-card-highlight {
+      background: linear-gradient(180deg, rgba(217, 84, 42, 0.22) 0%, rgba(217, 84, 42, 0.08) 100%);
+      border: 1.5px solid rgba(217, 84, 42, 0.7);
+      box-shadow: 0 0 16px rgba(217, 84, 42, 0.25), 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .slide-02 .risk-card.risk-card-highlight .risk-card-icon {
+      background: rgba(217, 84, 42, 0.35);
+      border-color: rgba(217, 84, 42, 0.75);
+      color: #FFC0A8;
+    }
+
+    .slide-02 .risk-card.risk-card-highlight .risk-card-title {
+      color: #FF9E80;
+      font-weight: 800;
+    }
+
+    .slide-02 .risk-badge {
+      position: absolute;
+      top: -0.55em;
+      background: #D9542A;
+      color: white;
+      font-size: 0.46em;
+      font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 6px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+    }
+
+    .slide-02 .citation-note {
+      font-size: 0.65em;
+      color: #9DA1AA;
+      margin-top: 0.1em;
+      letter-spacing: 0.2px;
+    }
+
+    .slide-02 .right-image {
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      background: #1C232B;
+    }
+
+    .slide-02 .right-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .slide-02 .right-image::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(17, 19, 23, 0.45) 0%, transparent 22%);
+      pointer-events: none;
+    }
+
+    /* ============================================================
+       SLIDE 03 (PERFECTLY ALIGNED EXECUTIVE CHART & LAYOUT)
+       ============================================================ */
+    .slide-03 {
+      display: grid;
+      grid-template-columns: 52% 48%;
+      grid-template-rows: 1fr;
+      height: 100%;
+      box-sizing: border-box;
+      align-items: stretch;
+      background: #FAF6EB;
+    }
+
+    .slide-03 .chart-column {
+      padding: 5% 4% 4.5% 7%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.8em;
+      position: relative;
+      z-index: 2;
+    }
+
+    .slide-03 .slide-num {
+      position: static;
+      font-size: 0.85em;
+      font-weight: 800;
+      color: #8C8275;
+      letter-spacing: 1.5px;
+      display: block;
+      margin-bottom: 0.35em;
+    }
+
+    .slide-03 h2 {
+      font-size: 2.25em;
+      color: var(--dark-charcoal);
+      line-height: 1.1;
+    }
+
+    .slide-03 .bar-chart-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.2em;
+    }
+
+    .slide-03 .chart-main-svg {
+      width: 100%;
+      height: auto;
+      max-height: 13.5em;
+      display: block;
+      overflow: visible;
+    }
+
+    .slide-03 .strategy-wrapper {
+      padding: 5% 7% 4.5% 2%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .slide-03 .strategy-card {
+      background: var(--bg-cream-card);
+      border-radius: 14px;
+      padding: 7% 8%;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 1px solid #EFE4BF;
+      width: 100%;
+    }
+
+    .slide-03 .strategy-badge {
+      display: inline-block;
+      background: #F6C852;
+      padding: 3px 12px;
+      border-radius: 4px;
+      font-size: 0.75em;
+      font-weight: 800;
+      color: #873C27;
+      letter-spacing: 0.5px;
+      width: fit-content;
+      margin-bottom: 0.6em;
+    }
+
+    .slide-03 .bullet-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7em;
+    }
+
+    .slide-03 .bullet-list li {
+      display: flex;
+      gap: 0.6em;
+      font-size: 0.86em;
+      line-height: 1.38;
+      color: #2D2D2D;
+      align-items: flex-start;
+    }
+
+    .slide-03 .bullet-list li svg {
+      flex-shrink: 0;
+      width: 1.15em;
+      height: 1.15em;
+      color: var(--green-mid);
+      margin-top: 0.1em;
+    }
+
+    /* ============================================================
+       SLIDE 04 (FIXED RUPEE VALUES & BALANCED CARDS)
+       ============================================================ */
+    .slide-04 {
+      padding: 4% 5.5%;
+      display: grid;
+      grid-template-columns: 58% 42%;
+      gap: 3.5%;
+      height: 100%;
+      box-sizing: border-box;
+      align-items: center;
+      background: #FAF6EB;
+    }
+
+    .slide-04 .cost-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      gap: 0.6em;
+    }
+
+    .slide-04 h2 {
+      font-size: 2.1em;
+      line-height: 1.1;
+    }
+
+    .slide-04 .cost-sub {
+      font-size: 0.92em;
+      font-weight: 600;
+      color: #444;
+      margin-bottom: 0.3em;
+    }
+
+    .slide-04 .chemical-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.6em;
+      margin-bottom: 0.5em;
+    }
+
+    .slide-04 .chemical-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background: white;
+      padding: 0.7em 0.4em;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border-subtle);
+      gap: 0.35em;
+    }
+
+    .slide-04 .chem-icon {
+      width: 1.8em;
+      height: 1.8em;
+      color: var(--green-dark);
+    }
+
+    .slide-04 .chem-icon svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .slide-04 .chem-name {
+      font-size: 0.72em;
+      font-weight: 700;
+      color: #222;
+      line-height: 1.15;
+    }
+
+    .slide-04 .chem-rupee {
+      font-size: 0.9em;
+      color: var(--orange-accent);
+      font-weight: 800;
+    }
+
+    .slide-04 .chem-sub {
+      font-size: 0.58em;
+      color: #777;
+      line-height: 1.1;
+    }
+
+    .slide-04 .banner-pill {
+      background: var(--green-dark);
+      color: white;
+      border-radius: 30px;
+      padding: 0.6em 1.2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8em;
+      font-size: 0.9em;
+      font-weight: 700;
+      box-shadow: 0 6px 18px rgba(18, 77, 36, 0.22);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .slide-04 .banner-pill .pill-sub {
+      color: var(--green-bright);
+      font-size: 0.9em;
+    }
+
+    .slide-04 .note-box {
+      background: #FEF0B8;
+      border-radius: 14px;
+      padding: 8% 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+      border: 1px solid #EFE4BF;
+      height: 82%;
+    }
+
+    .slide-04 .note-box h4 {
+      font-size: 1.18em;
+      color: var(--brown-accent);
+      margin-bottom: 0.5em;
+      font-weight: 700;
+    }
+
+    .slide-04 .note-box p {
+      font-size: 0.92em;
+      line-height: 1.5;
+      color: #333333;
+    }
+
+    /* ============================================================
+       SLIDE 05 & 06 (REFINED GREENHOUSE & POLYHOUSE)
+       ============================================================ */
+    .slide-05,
+    .slide-06 {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      height: 100%;
+      background: #FAF6EB;
+    }
+
+    .slide-05 .text-pane,
+    .slide-06 .text-pane {
+      padding: 6% 5% 5% 7%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.1em;
+    }
+
+    .slide-05 h2,
+    .slide-06 h2 {
+      font-size: 2.3em;
+      color: var(--dark-charcoal);
+    }
+
+    .slide-05 .lead-p,
+    .slide-06 .lead-p {
+      font-size: 0.96em;
+      line-height: 1.5;
+      color: #3C3C3C;
+      margin-top: 0.3em;
+    }
+
+    .slide-05 .badges-row,
+    .slide-06 .badges-row {
+      display: flex;
+      gap: 1.0em;
+      margin-top: 0.4em;
+    }
+
+    .slide-05 .badge-col,
+    .slide-06 .badge-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.45em;
+      flex: 1;
+    }
+
+    .slide-05 .round-icon {
+      width: 2.9em;
+      height: 2.9em;
+      border-radius: 50%;
+      background: #D97A2B;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.7em;
+      box-shadow: 0 4px 12px rgba(217, 122, 43, 0.3);
+    }
+
+    .slide-06 .round-icon {
+      width: 2.9em;
+      height: 2.9em;
+      border-radius: 50%;
+      background: var(--green-dark);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.7em;
+      box-shadow: 0 4px 12px rgba(18, 77, 36, 0.3);
+    }
+
+    .slide-05 .round-icon svg,
+    .slide-06 .round-icon svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .slide-05 .badge-col span,
+    .slide-06 .badge-col span {
+      font-size: 0.75em;
+      font-weight: 700;
+      color: #222;
+      line-height: 1.25;
+    }
+
+    .slide-05 .photo-pane,
+    .slide-06 .photo-pane {
+      padding: 4%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .slide-05 .photo-pane img,
+    .slide-06 .photo-pane img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      display: block;
+      background: #25462D;
+    }
+
+    /* ============================================================
+       SLIDE 07
+       ============================================================ */
+    .slide-07 {
+      padding: 4.5% 6%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      box-sizing: border-box;
+      background: #FAF6EB;
+    }
+
+    .slide-07 h2 {
+      font-size: 2.1em;
+      margin-bottom: 0.3em;
+    }
+
+    .slide-07 table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    }
+
+    .slide-07 th {
+      background: var(--green-dark);
+      color: white;
+      font-size: 0.82em;
+      padding: 0.7em 1.0em;
+      text-align: left;
+      font-weight: 700;
+    }
+
+    .slide-07 td {
+      padding: 0.65em 1.0em;
+      font-size: 0.8em;
+      border-bottom: 1px solid #EFEAE0;
+      color: #2D2D2D;
+    }
+
+    .slide-07 tr:nth-child(even) td {
+      background: #FFFDF8;
+    }
+
+    .slide-07 tr:hover td {
+      background: #F6F2E7;
+    }
+
+    /* ============================================================
+       SLIDE 08
+       ============================================================ */
+    .slide-08 {
+      padding: 4% 5.5%;
+      display: grid;
+      grid-template-columns: 55% 45%;
+      gap: 4%;
+      height: 100%;
+      box-sizing: border-box;
+      align-items: center;
+      background: #FAF6EB;
+    }
+
+    .slide-08 h2 {
+      font-size: 2.2em;
+      margin-bottom: 0.4em;
+    }
+
+    .slide-08 .bullet-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6em;
+    }
+
+    .slide-08 .bullet-list li {
+      display: flex;
+      gap: 0.6em;
+      font-size: 0.82em;
+      line-height: 1.4;
+      color: #2D2D2D;
+      align-items: flex-start;
+    }
+
+    .slide-08 .bullet-list li svg {
+      flex-shrink: 0;
+      width: 1.15em;
+      height: 1.15em;
+      color: var(--green-mid);
+      margin-top: 0.1em;
+    }
+
+    .slide-08 .right-organic {
+      position: relative;
+      height: 90%;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      background: #25462D;
+    }
+
+    .slide-08 .right-organic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .slide-08 .organic-tag {
+      position: absolute;
+      bottom: 6%;
+      left: 6%;
+      right: 6%;
+      background: rgba(18, 77, 36, 0.88);
+      backdrop-filter: blur(8px);
+      color: white;
+      padding: 0.5em 0.9em;
+      border-radius: 8px;
+      font-size: 0.78em;
+      font-weight: 700;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* ============================================================
+       SLIDE 09
+       ============================================================ */
+    .slide-09 {
+      padding: 3% 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      box-sizing: border-box;
+      background: #FAF6EB;
+    }
+
+    .slide-09 h2 {
+      font-size: 1.85em;
+      margin-bottom: 0.15em;
+    }
+
+    .slide-09 .sub-chain-text {
+      font-size: 0.82em;
+      color: var(--text-muted);
+      margin-bottom: 0.4em;
+    }
+
+    .slide-09 .chain-7-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.3em;
+      background: white;
+      padding: 0.6em 0.8em;
+      border-radius: 10px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .slide-09 .chain-step-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      flex: 1;
+      gap: 0.25em;
+    }
+
+    .slide-09 .step-circle {
+      width: 2.1em;
+      height: 2.1em;
+      border-radius: 50%;
+      background: var(--green-dark);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5em;
+    }
+
+    .slide-09 .step-circle svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .slide-09 .step-name {
+      font-size: 0.7em;
+      font-weight: 800;
+      color: #111;
+    }
+
+    .slide-09 .step-detail {
+      font-size: 0.6em;
+      color: #666;
+      font-weight: 600;
+    }
+
+    .slide-09 .chain-arrow-sep {
+      color: var(--green-mid);
+      font-size: 0.9em;
+      font-weight: bold;
+    }
+
+    .slide-09 .value-compare-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3%;
+      margin-top: 0.4em;
+    }
+
+    .slide-09 .trap-box {
+      background: #FFF0F0;
+      border-radius: 10px;
+      padding: 4% 5%;
+      border-left: 4px solid var(--red-alert);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .slide-09 .trap-badge {
+      background: var(--red-alert);
+      color: white;
+      font-size: 0.65em;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 0.3em;
+    }
+
+    .slide-09 .trap-title {
+      font-size: 0.88em;
+      font-weight: 800;
+      color: #8A1515;
+      margin-bottom: 0.4em;
+    }
+
+    .slide-09 .trap-list {
+      list-style: none;
+      font-size: 0.72em;
+      line-height: 1.45;
+      color: #4A2222;
+    }
+
+    .slide-09 .trap-outcome {
+      margin-top: 0.5em;
+      font-size: 0.72em;
+      font-weight: 700;
+      color: var(--red-alert);
+    }
+
+    .slide-09 .business-box {
+      background: #EDF7EA;
+      border-radius: 10px;
+      padding: 4% 5%;
+      border-left: 4px solid var(--green-mid);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .slide-09 .biz-badge {
+      background: var(--green-mid);
+      color: white;
+      font-size: 0.65em;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 0.3em;
+    }
+
+    .slide-09 .biz-title {
+      font-size: 0.88em;
+      font-weight: 800;
+      color: var(--green-dark);
+      margin-bottom: 0.4em;
+    }
+
+    .slide-09 .biz-examples {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35em;
+      font-size: 0.72em;
+      line-height: 1.35;
+      color: #224422;
+    }
+
+    .slide-09 .biz-outcome {
+      margin-top: 0.5em;
+      font-size: 0.72em;
+      font-weight: 700;
+      color: var(--green-dark);
+    }
+
+    /* ============================================================
+       SLIDE 10
+       ============================================================ */
+    .slide-10 {
+      padding: 4.5% 6%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      box-sizing: border-box;
+      background: #FAF6EB;
+    }
+
+    .slide-10 h2 {
+      font-size: 2.1em;
+      margin-bottom: 0.4em;
+    }
+
+    .slide-10 .timeline-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1.5%;
+      height: 75%;
+    }
+
+    .slide-10 .step-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 0 0.8em 0;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .slide-10 .step-num-bar {
+      width: 100%;
+      background: var(--green-dark);
+      color: white;
+      font-size: 0.8em;
+      font-weight: 800;
+      padding: 0.3em 0;
+    }
+
+    .slide-10 .step-icon-box {
+      width: 2.5em;
+      height: 2.5em;
+      color: var(--green-mid);
+      margin: 0.6em 0 0.4em 0;
+    }
+
+    .slide-10 .step-icon-box svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .slide-10 .step-desc {
+      font-size: 0.74em;
+      font-weight: 700;
+      color: #222;
+      line-height: 1.3;
+      padding: 0 0.4em;
+    }
+
+    /* ============================================================
+       SLIDE 11
+       ============================================================ */
+    .slide-11 {
+      padding: 4% 5.5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      box-sizing: border-box;
+      background: #FAF6EB;
+    }
+
+    .slide-11 h2 {
+      font-size: 2.2em;
+      margin-bottom: 0.3em;
+    }
+
+    .slide-11 .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3%;
+      height: 80%;
+    }
+
+    .slide-11 .comparison-card {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      padding: 3.5%;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .slide-11 .card-tag {
+      padding: 0.3em 0.9em;
+      border-radius: 20px;
+      font-size: 0.82em;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 3%;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .slide-11 .tag-trad {
+      background: #F0E8D4;
+      color: #555;
+    }
+
+    .slide-11 .tag-poly {
+      background: var(--green-dark);
+      color: white;
+    }
+
+    .slide-11 .card-photo {
+      width: 100%;
+      height: 50%;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 3.5%;
+      background: #25462D;
+    }
+
+    .slide-11 .card-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .slide-11 .metrics-box {
+      font-size: 0.88em;
+      line-height: 1.55;
+      color: #333;
+    }
+
+    .slide-11 .metrics-box strong {
+      color: #111;
+      font-weight: 700;
+    }
+
+    .slide-11 .poly-highlight {
+      color: var(--green-dark);
+      font-weight: 800;
+    }
+
+    /* ============================================================
+       SLIDE 12
+       ============================================================ */
+    .slide-12 {
+      padding: 4.5% 6%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 4%;
+      height: 100%;
+      box-sizing: border-box;
+      align-items: center;
+      background: #FAF6EB;
+    }
+
+    .slide-12 .left-graph-side {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      gap: 0.8em;
+    }
+
+    .slide-12 h2 {
+      font-size: 2.1em;
+      line-height: 1.15;
+    }
+
+    .slide-12 .graph-area {
+      background: white;
+      border-radius: 12px;
+      padding: 5%;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      position: relative;
+      height: 68%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .slide-12 .right-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.1em;
+    }
+
+    .slide-12 .desc-lead {
+      font-size: 1.02em;
+      line-height: 1.45;
+      color: #333333;
+    }
+
+    .slide-12 .benefits-box {
+      background: var(--bg-light-green);
+      border-radius: 12px;
+      padding: 6% 7%;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--border-green);
+    }
+
+    .slide-12 .benefit-item {
+      display: flex;
+      align-items: center;
+      gap: 0.65em;
+      font-size: 0.95em;
+      font-weight: 700;
+      color: var(--green-dark);
+      margin-bottom: 0.6em;
+    }
+
+    .slide-12 .benefit-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .slide-12 .benefit-item svg {
+      width: 1.2em;
+      height: 1.2em;
+      flex-shrink: 0;
+    }
+
+    /* ============================================================
+       SLIDE 13
+       ============================================================ */
+    .slide-13 {
+      padding: 2.2% 4.5%;
+      display: grid;
+      grid-template-columns: 66% 34%;
+      gap: 2.5%;
+      height: 100%;
+      box-sizing: border-box;
+      align-items: center;
+      background: #FAF6EB;
+    }
+
+    .slide-13 h2 {
+      font-size: 1.75em;
+      margin-bottom: 0.1em;
+    }
+
+    .slide-13 .sub-orange {
+      font-size: 0.78em;
+      color: var(--orange-accent);
+      font-weight: 700;
+      margin-bottom: 0.3em;
+    }
+
+    .slide-13 .formula-badge {
+      background: #FFF5F2;
+      border: 1px dashed var(--orange-accent);
+      border-radius: 6px;
+      padding: 0.22em 0.6em;
+      font-size: 0.66em;
+      color: var(--brown-accent);
+      font-weight: 700;
+      margin-bottom: 0.5em;
+      display: inline-block;
+    }
+
+    .slide-13 table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    }
+
+    .slide-13 th {
+      background: var(--green-dark);
+      color: white;
+      font-size: 0.68em;
+      padding: 0.36em 0.5em;
+      font-weight: 700;
+    }
+
+    .slide-13 td {
+      padding: 0.26em 0.5em;
+      font-size: 0.66em;
+      border-bottom: 1px solid #ECE7D8;
+    }
+
+    .slide-13 tr:nth-child(even) td {
+      background: #FFFBEB;
+    }
+
+    .slide-13 td:first-child {
+      font-weight: 700;
+      color: #222;
+    }
+
+    .slide-13 td:not(:first-child) {
+      text-align: center;
+    }
+
+    .slide-13 .net-green {
+      color: var(--green-dark);
+      font-weight: 800;
+      font-size: 0.82em;
+    }
+
+    .slide-13 .net-opt {
+      color: var(--orange-accent);
+      font-weight: 800;
+    }
+
+    .slide-13 .quote-script {
+      margin-top: 0.5em;
+      font-size: 0.92em;
+      color: var(--green-dark);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .slide-13 .coins-photo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6em;
+    }
+
+    .slide-13 .coins-photo img {
+      width: 75%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+      border: 3px solid white;
+      background: #25462D;
+    }
+
+    .slide-13 .jump-callout {
+      background: #FEF0B8;
+      border-radius: 8px;
+      padding: 0.5em 0.8em;
+      font-size: 0.72em;
+      font-weight: 700;
+      color: var(--brown-accent);
+      text-align: center;
+      border: 1px solid #EFE4BF;
+    }
+
+    /* ============================================================
+       SLIDE 14
+       ============================================================ */
+    .slide-14 {
+      padding: 3.5% 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      box-sizing: border-box;
+      background: #FAF6EB;
+    }
+
+    .slide-14 h2 {
+      font-size: 2.1em;
+      margin-bottom: 0.15em;
+    }
+
+    .slide-14 .sub-levers-text {
+      font-size: 0.85em;
+      color: var(--text-muted);
+      margin-bottom: 0.5em;
+    }
+
+    .slide-14 .levers-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1.2%;
+      height: 75%;
+    }
+
+    .slide-14 .lever-card {
+      background: white;
+      border-radius: 12px;
+      padding: 0.8em 0.6em;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border-subtle);
+      position: relative;
+    }
+
+    .slide-14 .lever-tag {
+      background: #F4EEDC;
+      color: var(--brown-accent);
+      font-size: 0.65em;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 4px;
+      width: fit-content;
+      margin-bottom: 0.4em;
+    }
+
+    .slide-14 .lever-icon-circle {
+      width: 2.4em;
+      height: 2.4em;
+      border-radius: 50%;
+      background: var(--bg-light-green);
+      color: var(--green-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.4em;
+      padding: 0.55em;
+    }
+
+    .slide-14 .lever-icon-circle svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .slide-14 .lever-title {
+      font-size: 0.82em;
+      font-weight: 800;
+      color: #111;
+      margin-bottom: 0.3em;
+      line-height: 1.2;
+    }
+
+    .slide-14 .lever-desc {
+      font-size: 0.68em;
+      line-height: 1.4;
+      color: #444;
+    }
+
+    /* ============================================================
+       SLIDE 15
+       ============================================================ */
+    .slide-15 {
+      padding: 3% 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      box-sizing: border-box;
+      background: #FAF6EB;
+    }
+
+    .slide-15 h2 {
+      font-size: 2.0em;
+      margin-bottom: 0.2em;
+    }
+
+    .slide-15 .schemes-top {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2%;
+      margin-bottom: 0.3em;
+    }
+
+    .slide-15 .scheme-col {
+      background: white;
+      border-radius: 10px;
+      padding: 0.6em 0.8em;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .slide-15 .scheme-icon {
+      width: 1.8em;
+      height: 1.8em;
+      color: var(--green-mid);
+      margin-bottom: 0.2em;
+    }
+
+    .slide-15 .scheme-icon svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .slide-15 .scheme-name {
+      font-size: 0.82em;
+      font-weight: 800;
+      color: #111;
+      margin-bottom: 0.15em;
+    }
+
+    .slide-15 .scheme-sub {
+      font-size: 0.68em;
+      color: #555;
+      line-height: 1.3;
+    }
+
+    .slide-15 .income-milestones {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2%;
+      margin-bottom: 0.3em;
+    }
+
+    .slide-15 .milestone-box {
+      background: var(--bg-light-green);
+      border: 1px solid var(--border-green);
+      border-radius: 10px;
+      padding: 0.6em 0.8em;
+    }
+
+    .slide-15 .milestone-val {
+      font-size: 0.92em;
+      font-weight: 800;
+      color: var(--green-dark);
+      margin-bottom: 0.2em;
+    }
+
+    .slide-15 .milestone-sub {
+      font-size: 0.68em;
+      color: #333;
+      line-height: 1.35;
+    }
+
+    .slide-15 .quote-banner {
+      display: flex;
+      align-items: center;
+      gap: 1.0em;
+      background: var(--bg-cream-card);
+      border-radius: 10px;
+      padding: 0.5% 2%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      margin-top: 0.3em;
+      border: 1px solid #EFE4BF;
+    }
+
+    .slide-15 .farmer-face {
+      width: 3.0em;
+      height: 3.0em;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+      border: 2px solid white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+      background: #25462D;
+    }
+
+    .slide-15 .farmer-face img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .slide-15 .quote-paragraph {
+      font-size: 0.75em;
+      font-style: italic;
+      color: #2D2D2D;
+      line-height: 1.35;
+    }
+
+    /* ============================================================
+       SLIDE 16
+       ============================================================ */
+    .slide-16 {
+      height: 100%;
+      color: white;
+      overflow: hidden;
+    }
+
+    .slide-16 .bg-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      z-index: 1;
+      display: block;
+    }
+
+    .slide-16 .bg-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(14, 43, 22, 0.92) 0%, rgba(10, 26, 15, 0.85) 100%);
+      z-index: 2;
+    }
+
+    .slide-16 .content-layer {
+      position: relative;
+      z-index: 3;
+      padding: 6% 6% 4% 6%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      box-sizing: border-box;
+    }
+
+    .slide-16 h2 {
+      font-size: 2.85em;
+      color: white;
+      line-height: 1.08;
+    }
+
+    .slide-16 .green-bar {
+      width: 4em;
+      height: 0.15em;
+      background: var(--green-bright);
+      margin-top: 0.6em;
+    }
+
+    .slide-16 .closing-sub {
+      font-size: 1.15em;
+      color: #FFF2D1;
+      font-style: italic;
+      font-weight: 600;
+      line-height: 1.35;
+      text-align: right;
+      max-width: 14em;
+    }
+
+    .slide-16 .footer-glass-bar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 12px;
+      padding: 0.8em 1.5em;
+    }
+
+    .slide-16 .pillar-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.35em;
+    }
+
+    .slide-16 .pillar-item svg {
+      width: 1.6em;
+      height: 1.6em;
+      color: var(--green-bright);
+    }
+
+    .slide-16 .pillar-item span {
+      font-size: 0.75em;
+      font-weight: 700;
+      color: white;
+      letter-spacing: 0.5px;
+    }
+
+    /* ============================================================
+       PRINT STYLES
+       ============================================================ */
+    @media print {
+      body {
+        background: white !important;
+      }
+
+      .app-toolbar,
+      .fullscreen-hud {
+        display: none !important;
+      }
+
+      .main-container {
+        padding: 0 !important;
+        max-width: none !important;
+        display: block !important;
+      }
+
+      .presentation-stage {
+        display: block !important;
+        position: static !important;
+        aspect-ratio: auto !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        max-width: none !important;
+      }
+
+      .slide-canvas {
+        display: grid !important;
+        position: relative !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        transform: none !important;
+        page-break-after: always !important;
+        margin-bottom: 0 !important;
+        box-shadow: none !important;
+        width: 100vw !important;
+        height: 56.25vw !important;
+        font-size: 2.22vw !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP APPLICATION TOOLBAR -->
+  <header class="app-toolbar">
+    <div class="brand-group">
+      <div class="brand-logo-badge">HK</div>
+      <div class="brand-titles">
+        <h1>Hariyali Kranti 2.0 • From Chemicals to Change</h1>
+        <p>Executive Presentation Deck • Professional Business Level</p>
+      </div>
+    </div>
+
+    <div class="toolbar-actions">
+      <!-- Slide Navigation Controls -->
+      <div class="nav-controls">
+        <button class="btn" id="btnPrev" onclick="prevSlide()" title="Previous Slide (Left Arrow / PageUp)">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="15 18 9 12 15 6" />
+          </svg> Prev
+        </button>
+        <span class="slide-counter" id="slideCounterText">01 / 16</span>
+        <button class="btn" id="btnNext" onclick="nextSlide()" title="Next Slide (Right Arrow / PageDown / Space)">
+          Next <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
+        <select class="slide-select" id="slideDropdown" onchange="goToSlide(parseInt(this.value))">
+          <option value="1">Slide 01: Executive Title & Vision (Gujarat & India)</option>
+          <option value="2">Slide 02: Cancer Awareness (Multifactorial Science)</option>
+          <option value="3">Slide 03: Rising Cancer Incidence Trend (ICMR Data)</option>
+          <option value="4">Slide 04: Hidden Operational Cost of Chemicals</option>
+          <option value="5">Slide 05: What is a Greenhouse? (Controlled Climate)</option>
+          <option value="6">Slide 06: What is a Polyhouse? (Indian Fit)</option>
+          <option value="7">Slide 07: Polyhouse vs Greenhouse Comparison</option>
+          <option value="8">Slide 08: Can Protected Cultivation Be Organic?</option>
+          <option value="9">Slide 09: 7-Stage Agri-Business Chain & Value Addition</option>
+          <option value="10">Slide 10: 6-Phase Implementation Roadmap</option>
+          <option value="11">Slide 11: Real Tomato Field Case Study</option>
+          <option value="12">Slide 12: Market Economics (Supply, Demand & Timing)</option>
+          <option value="13">Slide 13: 1-Acre Financial P&L Master Model</option>
+          <option value="14">Slide 14: The 5 Big Levers for Farm Profitability</option>
+          <option value="15">Slide 15: Government Support & Gujarat Roadmaps</option>
+          <option value="16">Slide 16: Executive Vision for Indian Agriculture</option>
+        </select>
+      </div>
+
+      <!-- Live Direct In-Browser Text Editing -->
+      <button class="btn" id="btnLiveEdit" onclick="toggleLiveEdit()" title="Toggle in-browser direct text editing">
+        ✏️ Edit In-Browser
+      </button>
+
+      <!-- Presentation Mode Button (Enters Fullscreen Presentation) -->
+      <button class="btn btn-gold" id="btnPresentation" onclick="startPresentation()"
+        title="Enter Fullscreen Presentation Mode">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+          <polygon points="5 3 19 12 5 21 5 3" />
+        </svg>
+        Presentation Mode
+      </button>
+
+      <button class="btn" onclick="window.print()" title="Print or Save All Slides as PDF">
+        🖨️ Print / PDF
+      </button>
+
+      <a href="From_Chemicals_to_Change_Presentation.pptx" download class="btn"
+        title="Download PowerPoint presentation (.pptx)">
+        📥 PPTX
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER (Unified Stage) -->
+  <main class="main-container">
+    <div class="presentation-stage" id="presentationStage">
+
+      <!-- SLIDE 01: Executive Title & Vision -->
+      <div class="slide-canvas slide-01 active" data-slide="1">
+        <div class="left-col">
+          <span class="slide-num">01</span>
+          <div class="tag-top" data-editable>Agricultural Strategy • India & Gujarat</div>
+          <div class="main-heading serif-title" data-editable>
+            <span class="word-from">From</span>
+            <span class="word-chem">Chemicals</span>
+            <span class="word-change">to Change</span>
+          </div>
+          <div class="sub-text" data-editable>Sustainable Farming for<br>a Healthier Tomorrow</div>
+          <div class="cta-pill" data-editable>
+            <div class="pill-text">Sustainable Yield<br>Farmer Prosperity</div>
+            <div class="pill-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg></div>
+          </div>
+        </div>
+        <div class="right-col">
+          <img src="images/slide01_farmer.jpg" alt="Indian farmer in lush green field at golden hour"
+            onerror="this.onerror=null; this.src='HK 2.0/images/slide01_farmer.jpg';">
+          <div class="overlay-badge" data-editable>
+            Better Farmers • Healthier People • Stronger India
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 02: Cancer Awareness -->
+      <div class="slide-canvas slide-02" data-slide="2">
+        <div class="left-content">
+          <div class="title-area">
+            <span class="slide-num">02</span>
+            <h2 class="serif-title" data-editable>Is <span class="highlight-red">Cancer</span><br>only because
+              of<br>tobacco?</h2>
+            <p class="desc-text" data-editable>Tobacco, alcohol and lifestyle are major factors, but they are not the
+              only documented health concerns.</p>
+          </div>
+          <div class="risk-factors-grid">
+            <div class="risk-card" data-editable>
+              <div class="risk-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 12H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h15a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1Z" />
+                  <path d="M18 12h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-3v-4Z" />
+                  <path d="M18 7c0-2-1.5-2-1.5-4" />
+                  <path d="M22 7c0-2-1.5-2-1.5-4" />
+                </svg></div>
+              <span class="risk-card-title">Tobacco</span>
+            </div>
+            <div class="risk-card" data-editable>
+              <div class="risk-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 22h8" />
+                  <path d="M12 11v11" />
+                  <path d="m19 3-4 8H9L5 3z" />
+                </svg></div>
+              <span class="risk-card-title">Alcohol</span>
+            </div>
+            <div class="risk-card" data-editable>
+              <div class="risk-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 20h20" />
+                  <path d="M14 20v-8l4 3v-7l4 3V4l-6 4v4l-4-3v8" />
+                </svg></div>
+              <span class="risk-card-title">Air<br>Pollution</span>
+            </div>
+            <div class="risk-card" data-editable>
+              <div class="risk-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 11a8 8 0 0 1 16 0H4Z" />
+                  <path d="M4 15h16" />
+                  <path d="M6 19h12a2 2 0 0 0 2-2H4a2 2 0 0 0 2 2Z" />
+                </svg></div>
+              <span class="risk-card-title">Processed<br>Diet</span>
+            </div>
+            <div class="risk-card risk-card-highlight" data-editable>
+              <span class="risk-badge">Critical</span>
+              <div class="risk-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M10 2v7.31L4.1 19.46A2 2 0 0 0 5.8 22h12.4a2 2 0 0 0 1.7-2.54L14 9.31V2" />
+                  <path d="M8.5 2h7" />
+                </svg></div>
+              <span class="risk-card-title">Agrochemical<br>Residues</span>
+            </div>
+          </div>
+          <div class="citation-note" data-editable>Source: Documented etiology by WHO, IARC & ICMR NCRP.</div>
+        </div>
+        <div class="right-image">
+          <img src="images/slide02_hospital.jpg" alt="Clinical healthcare and oncology research"
+            onerror="this.onerror=null; this.src='HK 2.0/images/slide02_hospital.jpg';">
+        </div>
+      </div>
+
+      <!-- SLIDE 03: Rising Cancer Incidence Trend (PERFECTLY ALIGNED CHART) -->
+      <div class="slide-canvas slide-03" data-slide="3">
+        <div class="chart-column">
+          <span class="slide-num">03</span>
+          <div class="title-area">
+            <h2 class="serif-title" data-editable>Rising Cancer Cases<br>in India</h2>
+          </div>
+          <div class="bar-chart-container">
+            <svg class="chart-main-svg" viewBox="0 0 420 220" preserveAspectRatio="xMidYMid meet">
+              <defs>
+                <linearGradient id="barGrad2010" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#6FA1A1" />
+                  <stop offset="100%" stop-color="#487272" />
+                </linearGradient>
+                <linearGradient id="barGrad2015" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#4F7F90" />
+                  <stop offset="100%" stop-color="#305462" />
+                </linearGradient>
+                <linearGradient id="barGrad2020" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#9C4B33" />
+                  <stop offset="100%" stop-color="#702B19" />
+                </linearGradient>
+                <linearGradient id="barGrad2025" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#E66137" />
+                  <stop offset="100%" stop-color="#BA3811" />
+                </linearGradient>
+                <filter id="barShadow" x="-10%" y="-5%" width="120%" height="115%">
+                  <feDropShadow dx="0" dy="4" stdDeviation="3" flood-opacity="0.08" />
+                </filter>
+              </defs>
+
+              <!-- Baseline (X-Axis) -->
+              <line x1="20" y1="180" x2="400" y2="180" stroke="#D0C9B6" stroke-width="2" />
+
+              <!-- Bar 1 (2010) -->
+              <rect x="39" y="124" width="52" height="56" rx="6" fill="url(#barGrad2010)" filter="url(#barShadow)" />
+              <text x="65" y="105" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12"
+                font-weight="700" fill="#222222" data-editable>7.8 Lakh</text>
+              <text x="65" y="202" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11"
+                font-weight="700" fill="#666666" data-editable>2010</text>
+
+              <!-- Bar 2 (2015) -->
+              <rect x="139" y="98" width="52" height="82" rx="6" fill="url(#barGrad2015)" filter="url(#barShadow)" />
+              <text x="165" y="80" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12"
+                font-weight="700" fill="#222222" data-editable>11.6 Lakh</text>
+              <text x="165" y="202" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11"
+                font-weight="700" fill="#666666" data-editable>2015</text>
+
+              <!-- Bar 3 (2020) -->
+              <rect x="239" y="72" width="52" height="108" rx="6" fill="url(#barGrad2020)" filter="url(#barShadow)" />
+              <text x="265" y="54" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12"
+                font-weight="700" fill="#222222" data-editable>13.9 Lakh</text>
+              <text x="265" y="202" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11"
+                font-weight="700" fill="#666666" data-editable>2020</text>
+
+              <!-- Bar 4 (2025 Est.) -->
+              <rect x="339" y="46" width="52" height="134" rx="6" fill="url(#barGrad2025)" filter="url(#barShadow)" />
+              <text x="365" y="28" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13"
+                font-weight="800" fill="#D9542A" data-editable>15.7 Lakh</text>
+              <text x="365" y="198" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12"
+                font-weight="800" fill="#D9542A" data-editable>2025</text>
+              <text x="365" y="211" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10"
+                font-weight="700" fill="#D9542A" data-editable>(Est.)</text>
+
+              <!-- Trend Curve: Connects exactly from top center of Bar 1 through Bar 4 and extends to arrow -->
+              <path d="M 65 124 C 115 112, 125 102, 165 98 C 205 94, 225 80, 265 72 C 305 64, 325 52, 365 46 L 395 38"
+                stroke="#D32F2F" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+              <!-- Data Point Nodes -->
+              <circle cx="65" cy="124" r="4.5" fill="#FAF6EB" stroke="#D32F2F" stroke-width="2.5" />
+              <circle cx="165" cy="98" r="4.5" fill="#FAF6EB" stroke="#D32F2F" stroke-width="2.5" />
+              <circle cx="265" cy="72" r="4.5" fill="#FAF6EB" stroke="#D32F2F" stroke-width="2.5" />
+              <circle cx="365" cy="46" r="5" fill="#D32F2F" stroke="#FAF6EB" stroke-width="2.5" />
+
+              <!-- Arrowhead extending past Bar 4 to the upper right -->
+              <polygon points="388,32 402,36 392,44" fill="#D32F2F" />
+            </svg>
+          </div>
+        </div>
+        <div class="strategy-wrapper">
+          <div class="strategy-card">
+            <div class="strategy-badge" data-editable>Key Agronomic Shifts</div>
+            <ul class="bullet-list">
+              <li data-editable><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Rapid adoption of synthetic nitrogen & chemical pesticides since 1970s.</span></li>
+              <li data-editable><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>India emerged as a massive high-growth target market for agrochemical giants.</span></li>
+              <li data-editable><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Short-term yield spikes coupled with long-term soil carbon and biology depletion.</span>
+              </li>
+              <li data-editable><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> <span>Growing scientific consensus on reducing avoidable occupational and consumer chemical
+                  exposure.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 04: Hidden Operational Cost of Chemicals -->
+      <div class="slide-canvas slide-04" data-slide="4">
+        <span class="slide-num top-left">04</span>
+        <div class="cost-content">
+          <div>
+            <h2 class="serif-title" data-editable>The Hidden Cost<br>of Chemical Farming</h2>
+            <div class="cost-sub" data-editable>Every season, recurring operational expenditure is drained by:</div>
+          </div>
+          <div class="chemical-grid">
+            <div class="chemical-card" data-editable>
+              <div class="chem-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="5" y="4" width="14" height="17" rx="3" />
+                  <path d="M9 9h6" />
+                  <path d="M12 9v7" />
+                </svg></div>
+              <div class="chem-name">Synthetic Fertilizers</div>
+              <div class="chem-rupee">₹35,000</div>
+              <div class="chem-sub">Urea, DAP & NPK</div>
+            </div>
+            <div class="chemical-card" data-editable>
+              <div class="chem-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4" />
+                  <path d="M7 6h10" />
+                  <path d="M8 10h8v10a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V10Z" />
+                  <line x1="12" y1="14" x2="12" y2="18" />
+                </svg></div>
+              <div class="chem-name">Chemical Pesticides</div>
+              <div class="chem-rupee">₹25,000</div>
+              <div class="chem-sub">Insecticides & sprays</div>
+            </div>
+            <div class="chemical-card" data-editable>
+              <div class="chem-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m13 2-2 2.5h3L11 9" />
+                  <circle cx="12" cy="16" r="5" />
+                  <path d="M12 13v3" />
+                </svg></div>
+              <div class="chem-name">Hormone Boosters</div>
+              <div class="chem-rupee">₹12,000</div>
+              <div class="chem-sub">Growth regulators</div>
+            </div>
+            <div class="chemical-card" data-editable>
+              <div class="chem-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a5 5 0 0 1 5 5c0 4-5 9-5 9s-5-5-5-9a5 5 0 0 1 5-5Z" />
+                  <path d="M3 21h18" />
+                </svg></div>
+              <div class="chem-name">Soil Additives</div>
+              <div class="chem-rupee">₹8,000</div>
+              <div class="chem-sub">Conditioners</div>
+            </div>
+          </div>
+          <div class="banner-pill" data-editable>
+            <span>Same Capital Reallocation</span>
+            <span class="pill-sub">➔</span>
+            <span>Long-Term Farm Asset (₹80,000/yr Saved)</span>
+          </div>
+        </div>
+        <div class="note-box" data-editable>
+          <h4>The 1-Year Investment Pivot</h4>
+          <p>If an Indian farmer redirects just ONE year of recurring poison spend (~₹80,000/acre), that
+            capital—combined with state subsidies—funds a <strong>high-tech Polyhouse or precision Drip irrigation
+              system</strong>.</p>
+        </div>
+      </div>
+
+      <!-- SLIDE 05: What is a Greenhouse? -->
+      <div class="slide-canvas slide-05" data-slide="5">
+        <span class="slide-num top-left">05</span>
+        <div class="text-pane">
+          <div>
+            <h2 class="serif-title" data-editable>What is a Greenhouse?</h2>
+            <p class="lead-p" data-editable>A greenhouse is an engineered micro-climate structure designed for protected
+              agriculture. Utilizing glass or structured polycarbonate, it eliminates climate volatility and delivers
+              complete environmental control.</p>
+          </div>
+          <div class="badges-row">
+            <div class="badge-col" data-editable>
+              <div class="round-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2" />
+                  <path d="M12 20v2" />
+                  <path d="m4.93 4.93 1.41 1.41" />
+                  <path d="m17.66 17.66 1.41 1.41" />
+                  <path d="M2 12h2" />
+                  <path d="M20 12h2" />
+                  <path d="m6.34 17.66-1.41 1.41" />
+                  <path d="m19.07 4.93-1.41 1.41" />
+                </svg></div>
+              <span>Micro-Climate<br>Regulation</span>
+            </div>
+            <div class="badge-col" data-editable>
+              <div class="round-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg></div>
+              <span>365-Day Year-Round<br>Harvest Cycles</span>
+            </div>
+            <div class="badge-col" data-editable>
+              <div class="round-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="6" />
+                  <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+                </svg></div>
+              <span>Export-Grade<br>Blemish-Free Crop</span>
+            </div>
+          </div>
+        </div>
+        <div class="photo-pane">
+          <img src="images/slide05_greenhouse.jpg" alt="Commercial modern greenhouse interior"
+            onerror="this.onerror=null; this.src='HK 2.0/images/slide05_greenhouse.jpg';">
+        </div>
+      </div>
+
+      <!-- SLIDE 06: What is a Polyhouse? -->
+      <div class="slide-canvas slide-06" data-slide="6">
+        <span class="slide-num top-left">06</span>
+        <div class="text-pane">
+          <div>
+            <h2 class="serif-title" data-editable>What is a Polyhouse?</h2>
+            <p class="lead-p" data-editable>A polyhouse is a cost-effective greenhouse variant sheathed in UV-stabilized
+              polyethylene film over a galvanized iron (GI) frame. Extensively adopted across Gujarat, Maharashtra, and
+              North India with up to 75% subsidy support.</p>
+          </div>
+          <div class="badges-row">
+            <div class="badge-col" data-editable>
+              <div class="round-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="1" x2="12" y2="23" />
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                </svg></div>
+              <span>High ROI<br>Capital Efficiency</span>
+            </div>
+            <div class="badge-col" data-editable>
+              <div class="round-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2" />
+                  <path d="M12 20v2" />
+                  <path d="m4.93 4.93 1.41 1.41" />
+                  <path d="m17.66 17.66 1.41 1.41" />
+                  <path d="M2 12h2" />
+                  <path d="M20 12h2" />
+                  <path d="m6.34 17.66-1.41 1.41" />
+                  <path d="m19.07 4.93-1.41 1.41" />
+                </svg></div>
+              <span>Engineered for<br>Indian Climate</span>
+            </div>
+            <div class="badge-col" data-editable>
+              <div class="round-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                </svg></div>
+              <span>Modular & Low<br>Maintenance</span>
+            </div>
+          </div>
+        </div>
+        <div class="photo-pane">
+          <img src="images/slide06_polyhouse.jpg" alt="Polyhouse crop canopy in India"
+            onerror="this.onerror=null; this.src='HK 2.0/images/slide06_polyhouse.jpg';">
+        </div>
+      </div>
+
+      <!-- SLIDE 07: Polyhouse vs Greenhouse -->
+      <div class="slide-canvas slide-07" data-slide="7">
+        <span class="slide-num top-left">07</span>
+        <h2 class="serif-title" data-editable>Polyhouse vs. Greenhouse: Architectural Comparison</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Technical Feature</th>
+              <th>Polyhouse System</th>
+              <th>Commercial Greenhouse</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Covering Material</td>
+              <td>200-micron UV-stabilized Polyethylene</td>
+              <td>Toughened Glass or Multiwall Polycarbonate</td>
+            </tr>
+            <tr>
+              <td>Capital Expenditure</td>
+              <td>Accessible (₹750 – ₹1,100 / sq. meter)</td>
+              <td>High Capital (₹2,500 – ₹5,000 / sq. meter)</td>
+            </tr>
+            <tr>
+              <td>Environmental Control</td>
+              <td>Semi-Controlled (Fan & Pad, Naturally Ventilated)</td>
+              <td>Fully Automated Closed Micro-climate</td>
+            </tr>
+            <tr>
+              <td>Structural Durability</td>
+              <td>GI Frame: 20+ yrs; Polyfilm: 5–7 yrs</td>
+              <td>Heavy Steel / Aluminum: 25+ years</td>
+            </tr>
+            <tr>
+              <td>Primary Commercial Use</td>
+              <td>Vegetables (Capsicum, Tomato, Cucumber), Spices</td>
+              <td>High-tech Floriculture, R&D, Exotic Seed Breeding</td>
+            </tr>
+            <tr>
+              <td>Indian Practical Adoption</td>
+              <td>Widely scaled in Gujarat, Maharashtra & HP</td>
+              <td>Specialized corporate / institutional projects</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- SLIDE 08: Organic Protected Farming -->
+      <div class="slide-canvas slide-08" data-slide="8">
+        <span class="slide-num top-left">08</span>
+        <div class="left-content">
+          <h2 class="serif-title" data-editable>Can Protected Farming<br>Be 100% Organic?</h2>
+          <ul class="bullet-list">
+            <li data-editable><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg> <span><strong>Yes.</strong> Protected cultivation and certified organic methods are natural
+                commercial partners.</span></li>
+            <li data-editable><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg> <span><strong>Biological Pest Control:</strong> Insect-proof netting, yellow/blue sticky traps, and
+                neem bio-extracts prevent chemical sprays.</span></li>
+            <li data-editable><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg> <span><strong>Organic Nutrition:</strong> Micro-dosing vermicompost slurry, Jeevamrut, and enriched
+                bio-fertilizers via drip.</span></li>
+            <li data-editable><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg> <span><strong>Accredited Certification:</strong> Compliant with NPOP (National Programme for
+                Organic Production) & PGS-India.</span></li>
+            <li data-editable><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg> <span><strong>Zero Residue Advantage:</strong> Captures commanding 30%–50% price premiums in Tier-1
+                metros and export markets.</span></li>
+          </ul>
+        </div>
+        <div class="right-organic">
+          <img src="images/slide08_hands_soil.jpg" alt="Rich fertile soil and green seedling in farmer hands"
+            onerror="this.onerror=null; this.src='HK 2.0/images/slide08_hands_soil.jpg';">
+          <div class="organic-tag" data-editable>Living Soil • Clean Food • Healthy Families</div>
+        </div>
+      </div>
+
+      <!-- SLIDE 09: 7-Stage Chain -->
+      <div class="slide-canvas slide-09" data-slide="9">
+        <span class="slide-num top-left">09</span>
+        <div>
+          <h2 class="serif-title" data-editable>The Agri-Business Transformation: Complete 7-Stage Chain</h2>
+          <div class="sub-chain-text" data-editable>Transitioning the Indian farmer from a price-taking grower into an
+            integrated agri-business enterprise</div>
+        </div>
+
+        <div class="chain-7-row">
+          <div class="chain-step-card" data-editable>
+            <div class="step-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14" />
+                <path d="M16.5 9.4 7.55 4.24" />
+                <polyline points="3.29 7 12 12 20.71 7" />
+                <line x1="12" y1="22" x2="12" y2="12" />
+                <circle cx="18" cy="18" r="3" />
+                <line x1="20.2" y1="20.2" x2="22" y2="22" />
+              </svg></div>
+            <div class="step-name">1. Land</div>
+            <div class="step-detail">Soil Test & Drip</div>
+          </div>
+          <div class="chain-arrow-sep">➔</div>
+          <div class="chain-step-card" data-editable>
+            <div class="step-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 20v-8l9-7 9 7v8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z" />
+                <path d="M9 21V12h6v9" />
+              </svg></div>
+            <div class="step-name">2. Production</div>
+            <div class="step-detail">Polyhouse & IPM</div>
+          </div>
+          <div class="chain-arrow-sep">➔</div>
+          <div class="chain-step-card" data-editable>
+            <div class="step-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+                <path d="m3.3 7 8.7 5 8.7-5" />
+                <path d="M12 22V12" />
+              </svg></div>
+            <div class="step-name">3. Storage</div>
+            <div class="step-detail">Cool Crates</div>
+          </div>
+          <div class="chain-arrow-sep">➔</div>
+          <div class="chain-step-card" data-editable>
+            <div class="step-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+              </svg></div>
+            <div class="step-name">4. Processing</div>
+            <div class="step-detail">Grading & Value-Add</div>
+          </div>
+          <div class="chain-arrow-sep">➔</div>
+          <div class="chain-step-card" data-editable>
+            <div class="step-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+                <line x1="7" y1="7" x2="7.01" y2="7" />
+              </svg></div>
+            <div class="step-name">5. Branding</div>
+            <div class="step-detail">Packaged & FSSAI</div>
+          </div>
+          <div class="chain-arrow-sep">➔</div>
+          <div class="chain-step-card" data-editable>
+            <div class="step-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7" />
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4" />
+                <path d="M2 7h20" />
+              </svg></div>
+            <div class="step-name">6. Market</div>
+            <div class="step-detail">FPO & Direct Retail</div>
+          </div>
+          <div class="chain-arrow-sep">➔</div>
+          <div class="chain-step-card" data-editable>
+            <div class="step-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg></div>
+            <div class="step-name">7. Customer</div>
+            <div class="step-detail">Full Value Capture</div>
+          </div>
+        </div>
+
+        <div class="value-compare-grid">
+          <div class="trap-box" data-editable>
+            <div>
+              <span class="trap-badge">The Commodity Trap</span>
+              <div class="trap-title">Stopping at Stage 2 (Raw Field Harvest)</div>
+              <ul class="trap-list">
+                <li>• Farmer sells uncleaned raw crop at farm gate or APMC distress auction</li>
+                <li>• Raw Wheat: ₹22–25/kg | Raw Groundnut: ₹55–60/kg</li>
+                <li>• Bulk produce sold for pennies during seasonal glut</li>
+                <li>• Multiple intermediaries capture 70% of consumer expenditure</li>
+              </ul>
+            </div>
+            <div class="trap-outcome">Outcome: Farmer carries 100% production risk, captures only 25% consumer rupee
+            </div>
+          </div>
+
+          <div class="business-box" data-editable>
+            <div>
+              <span class="biz-badge">Modern Agri-Business Model</span>
+              <div class="biz-title">Participating Across All 7 Value Stages</div>
+              <div class="biz-examples">
+                <div class="example-card">
+                  <strong>Wheat Model:</strong> Cleaned, stone-ground Chakki Atta in 5kg bags: <strong>₹60/kg</strong>
+                  (vs ₹24 raw)
+                </div>
+                <div class="example-card">
+                  <strong>Groundnut Model:</strong> Graded roasted snack packs or cold-pressed oil:
+                  <strong>₹200/kg</strong> (vs ₹55 raw)
+                </div>
+                <div class="example-card">
+                  <strong>Horticulture:</strong> Direct crate contracts with urban supermarkets & restaurants:
+                  <strong>3x profit</strong>
+                </div>
+              </div>
+            </div>
+            <div class="biz-outcome">Outcome: Farmer captures 65%–85% of consumer rupee directly through FPO / retail
+              linkages</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 10: 6-Phase Roadmap -->
+      <div class="slide-canvas slide-10" data-slide="10">
+        <span class="slide-num top-left">10</span>
+        <h2 class="serif-title" data-editable>6-Phase Implementation Roadmap</h2>
+        <div class="timeline-grid">
+          <div class="step-card" data-editable>
+            <div class="step-num-bar">01</div>
+            <div class="step-icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14" />
+                <path d="M16.5 9.4 7.55 4.24" />
+                <polyline points="3.29 7 12 12 20.71 7" />
+                <line x1="12" y1="22" x2="12" y2="12" />
+                <circle cx="18" cy="18" r="3" />
+                <line x1="20.2" y1="20.2" x2="22" y2="22" />
+              </svg></div>
+            <div class="step-desc">Crop Planning &<br>Market Feasibility</div>
+          </div>
+          <div class="step-card" data-editable>
+            <div class="step-num-bar">02</div>
+            <div class="step-icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 20v-8l9-7 9 7v8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z" />
+                <path d="M9 21V12h6v9" />
+              </svg></div>
+            <div class="step-desc">GI Polyhouse<br>Structure Setup</div>
+          </div>
+          <div class="step-card" data-editable>
+            <div class="step-num-bar">03</div>
+            <div class="step-icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+              </svg></div>
+            <div class="step-desc">Precision Drip &<br>Fertigation Lines</div>
+          </div>
+          <div class="step-card" data-editable>
+            <div class="step-num-bar">04</div>
+            <div class="step-icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg></div>
+            <div class="step-desc">Biological Inputs &<br>IPM Netting</div>
+          </div>
+          <div class="step-card" data-editable>
+            <div class="step-num-bar">05</div>
+            <div class="step-icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2" />
+                <path d="M12 20v2" />
+                <path d="m4.93 4.93 1.41 1.41" />
+                <path d="m17.66 17.66 1.41 1.41" />
+                <path d="M2 12h2" />
+                <path d="M20 12h2" />
+                <path d="m6.34 17.66-1.41 1.41" />
+                <path d="m19.07 4.93-1.41 1.41" />
+              </svg></div>
+            <div class="step-desc">Micro-Climate &<br>Canopy Tracking</div>
+          </div>
+          <div class="step-card" data-editable>
+            <div class="step-num-bar">06</div>
+            <div class="step-icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7" />
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4" />
+                <path d="M2 7h20" />
+              </svg></div>
+            <div class="step-desc">Grading, Packing &<br>Direct Selling</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 11: Real Field Benchmark: Tomato Cultivation -->
+      <div class="slide-canvas slide-11" data-slide="11">
+        <span class="slide-num top-left">11</span>
+        <h2 class="serif-title" data-editable>Real Field Benchmark: Tomato Cultivation</h2>
+        <div class="comparison-grid">
+          <div class="comparison-card" data-editable>
+            <div class="card-tag tag-trad">Open Field Cultivation (Traditional)</div>
+            <div class="card-photo">
+              <img src="images/slide11_open_field.jpg" alt="Traditional open field tomato crop"
+                onerror="this.onerror=null; this.src='HK 2.0/images/slide11_open_field.jpg';">
+            </div>
+            <div class="metrics-box">
+              <div>• <strong>Yield:</strong> 25–30 tons / acre</div>
+              <div>• <strong>Realized Price:</strong> ₹10–₹15 / kg (Seasonal Glut)</div>
+              <div>• <strong>Gross Revenue:</strong> ₹3.0 – ₹4.5 Lakh / acre</div>
+              <div>• <strong>Net Margin:</strong> Moderate (Pest losses up to 35%)</div>
+            </div>
+          </div>
+
+          <div class="comparison-card" data-editable>
+            <div class="card-tag tag-poly">Protected Polyhouse Cultivation (Integrated)</div>
+            <div class="card-photo">
+              <img src="images/slide11_polyhouse.jpg" alt="Polyhouse high-yield vertical tomato crop"
+                onerror="this.onerror=null; this.src='HK 2.0/images/slide11_polyhouse.jpg';">
+            </div>
+            <div class="metrics-box">
+              <div class="poly-highlight">• <strong>Yield:</strong> 80–100 tons / acre (3.5x Production)</div>
+              <div class="poly-highlight">• <strong>Realized Price:</strong> ₹40–₹60 / kg (Controlled Off-Season)</div>
+              <div class="poly-highlight">• <strong>Gross Revenue:</strong> ₹32.0 – ₹60.0 Lakh / acre</div>
+              <div>• <strong>Key Advantage:</strong> Vertical growth, blemish-free grade, zero rain damage</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 12: Market Economics -->
+      <div class="slide-canvas slide-12" data-slide="12">
+        <span class="slide-num top-left">12</span>
+        <div class="left-graph-side">
+          <h2 class="serif-title" data-editable>Market Economics: The Power of Seasonality</h2>
+          <div class="graph-area">
+            <svg viewBox="0 0 320 220" style="width: 90%; height: 85%;">
+              <line x1="45" y1="20" x2="45" y2="185" stroke="#18191C" stroke-width="2.5" />
+              <polygon points="45,15 41,25 49,25" fill="#18191C" />
+              <text x="10" y="25" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700"
+                fill="#18191C">Price (₹)</text>
+
+              <line x1="45" y1="185" x2="300" y2="185" stroke="#18191C" stroke-width="2.5" />
+              <polygon points="305,185 295,181 295,189" fill="#18191C" />
+              <text x="240" y="205" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700"
+                fill="#18191C">Market Supply</text>
+
+              <path d="M 60 45 Q 110 140 280 165" stroke="#D9542A" stroke-width="4.5" fill="none"
+                stroke-linecap="round" />
+
+              <circle cx="75" cy="65" r="5" fill="#D9542A" />
+              <text x="85" y="65" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700"
+                fill="#124D24">Off-Season Scarcity (Peak ₹60/kg)</text>
+
+              <circle cx="250" cy="160" r="5" fill="#555" />
+              <text x="175" y="150" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600"
+                fill="#777">Open Field Glut (₹10/kg)</text>
+            </svg>
+          </div>
+        </div>
+        <div class="right-details">
+          <p class="desc-lead" data-editable>When market supply contracts while urban consumer demand remains constant,
+            farm-gate realization surges exponentially.</p>
+          <div class="benefits-box">
+            <div class="benefit-item" data-editable><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg> <span>Controlled Off-Season Harvesting</span></div>
+            <div class="benefit-item" data-editable><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg> <span>Bypassing Conventional Harvest Gluts</span></div>
+            <div class="benefit-item" data-editable><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg> <span>Consistent Quality Commands Premium Pricing</span></div>
+            <div class="benefit-item" data-editable><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg> <span>Higher Farm Margin with Less Total Acreage</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 13: 1-Acre Financial P&L -->
+      <div class="slide-canvas slide-13" data-slide="13">
+        <span class="slide-num top-left">13</span>
+        <div class="table-area">
+          <div>
+            <h2 class="serif-title" data-editable>1-Acre Financial P&L: Economics & Margins</h2>
+            <div class="sub-orange" data-editable>Real-world agronomic models for Indian & Gujarat conditions (Cotton,
+              Groundnut, Spices, Protected Veggies)</div>
+            <div class="formula-badge" data-editable>Profit Formula: Net Return = Gross Revenue − (Inputs + Labour +
+              Irrigation + Transport)</div>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Financial Metric</th>
+                <th>Traditional Field</th>
+                <th>Smarter Diversified</th>
+                <th>High-Tech Polyhouse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Capital Setup</td>
+                <td>₹50,000</td>
+                <td>₹75,000 (Drip & beds)</td>
+                <td>₹8,00,000 (Net after 70% Subsidy)</td>
+              </tr>
+              <tr>
+                <td>Annual Input Cost</td>
+                <td>₹60,000 (Chemicals)</td>
+                <td>₹62,000 (Organic + FPO)</td>
+                <td>₹6,50,000 (Biologicals & Seeds)</td>
+              </tr>
+              <tr>
+                <td>Yield per Acre</td>
+                <td>15–20 tons</td>
+                <td>22–26 tons</td>
+                <td>80–100 tons (3.5x Multiplier)</td>
+              </tr>
+              <tr>
+                <td>Avg Realized Price</td>
+                <td>₹15–₹20 / kg</td>
+                <td>₹26–₹30 / kg</td>
+                <td>₹45–₹60 / kg (Peak Off-Season)</td>
+              </tr>
+              <tr>
+                <td>Gross Revenue</td>
+                <td>₹1,00,000</td>
+                <td>₹1,30,000</td>
+                <td>₹36,00,000 – ₹45,00,000</td>
+              </tr>
+              <tr>
+                <td>Net Profit / Acre</td>
+                <td>₹40,000</td>
+                <td class="net-opt">₹68,000 (+70% jump)</td>
+                <td class="net-green">₹25,50,000+ Net Profit</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="quote-script" data-editable>+₹28,000 more net margin on same open land — and ₹25 Lakh+ in
+            protected cultivation!</div>
+        </div>
+        <div class="coins-photo">
+          <img src="images/slide13_coins.jpg" alt="Vibrant seedling and financial growth"
+            onerror="this.onerror=null; this.src='HK 2.0/images/slide13_coins.jpg';">
+          <div class="jump-callout" data-editable>
+            From Raw Commodity Price-Taker to High-Margin Farm Enterprise
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 14: 5 Big Levers -->
+      <div class="slide-canvas slide-14" data-slide="14">
+        <span class="slide-num top-left">14</span>
+        <div>
+          <h2 class="serif-title" data-editable>The 5 Big Levers for Farm Profitability</h2>
+          <div class="sub-levers-text" data-editable>Actionable strategic levers to maximize net return per acre without
+            expanding landholding size</div>
+        </div>
+        <div class="levers-grid">
+          <div class="lever-card" data-editable>
+            <div class="lever-tag">Lever 1</div>
+            <div class="lever-icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                <polyline points="17 6 23 6 23 12" />
+              </svg></div>
+            <div class="lever-title">High-Value Crop Economics</div>
+            <div class="lever-desc">Shift acreage from low-margin bulk commodities (cotton/castor) to spices, seed
+              crops, and high-margin protected vegetables.</div>
+          </div>
+          <div class="lever-card" data-editable>
+            <div class="lever-tag">Lever 2</div>
+            <div class="lever-icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg></div>
+            <div class="lever-title">Disintermediate Supply Chain</div>
+            <div class="lever-desc">Bypass 3–4 middlemen through FPOs, farmer cooperatives, supermarket contracts, and
+              direct urban farmers' markets.</div>
+          </div>
+          <div class="lever-card" data-editable>
+            <div class="lever-tag">Lever 3</div>
+            <div class="lever-icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+              </svg></div>
+            <div class="lever-title">On-Farm Value Addition</div>
+            <div class="lever-desc">Participate in downstream value: Cleaned wheat ➔ Packaged Atta (₹60/kg); Groundnut ➔
+              Roasted snack packs (₹200/kg).</div>
+          </div>
+          <div class="lever-card" data-editable>
+            <div class="lever-tag">Lever 4</div>
+            <div class="lever-icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg></div>
+            <div class="lever-title">Diversified Revenue Streams</div>
+            <div class="lever-desc">Insulate cash flow: Cash crop + Polyhouse horticulture + Dairy integration +
+              Vermicompost packaging + Nursery seedlings.</div>
+          </div>
+          <div class="lever-card" data-editable>
+            <div class="lever-tag">Lever 5</div>
+            <div class="lever-icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg></div>
+            <div class="lever-title">Input Cost Rationalization</div>
+            <div class="lever-desc">Eliminate ₹80,000 poison bill with on-farm Jeevamrut; prevent water waste with drip;
+              buy inputs collectively in FPO.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 15: Government Subsidies -->
+      <div class="slide-canvas slide-15" data-slide="15">
+        <span class="slide-num top-left">15</span>
+        <div>
+          <h2 class="serif-title" data-editable>Government Subsidies & Gujarat Income Roadmaps</h2>
+        </div>
+
+        <div class="schemes-top">
+          <div class="scheme-col" data-editable>
+            <div class="scheme-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 21h18" />
+                <path d="M4 18h16" />
+                <path d="M5 10v8" />
+                <path d="M9 10v8" />
+                <path d="M15 10v8" />
+                <path d="M19 10v8" />
+                <path d="M12 2 2 7h20z" />
+              </svg></div>
+            <div class="scheme-name">MIDH / NHM & i-Khedut</div>
+            <div class="scheme-sub">50% to 75% Capital Subsidy on Polyhouse, Mulching & Precision Drip</div>
+          </div>
+          <div class="scheme-col" data-editable>
+            <div class="scheme-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+                <path d="m3.3 7 8.7 5 8.7-5" />
+                <path d="M12 22V12" />
+              </svg></div>
+            <div class="scheme-name">NABARD & FPO Grants</div>
+            <div class="scheme-sub">Grants for Village Packhouses, Sorting Units, Cold Storage & Working Capital</div>
+          </div>
+          <div class="scheme-col" data-editable>
+            <div class="scheme-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg></div>
+            <div class="scheme-name">NPOP & PGS-India</div>
+            <div class="scheme-sub">Official Organic Certification for 30%–50% Domestic & Export Price Premium</div>
+          </div>
+        </div>
+
+        <div class="income-milestones">
+          <div class="milestone-box" data-editable>
+            <div class="milestone-val">₹5 Lakh / Year Model</div>
+            <div class="milestone-sub"><strong>0.5 Acre Polyhouse + Open Field:</strong> Off-season tomato/cucumber +
+              Cumin/Groundnut + Vermicompost unit (selling 5 tons/yr).</div>
+          </div>
+          <div class="milestone-box" data-editable>
+            <div class="milestone-val">₹10 Lakh / Year Model</div>
+            <div class="milestone-sub"><strong>1 Acre Polyhouse:</strong> 2 cycles (Colored Capsicum + Off-season
+              Cucumber) + Direct supply contracts to city retail chains.</div>
+          </div>
+          <div class="milestone-box" data-editable>
+            <div class="milestone-val">₹20+ Lakh / Year Model</div>
+            <div class="milestone-sub"><strong>Integrated Agri-Business:</strong> 2+ Acres Polyhouse + Village
+              Sorting/Packhouse + Branded Atta/Peanuts + FPO aggregation.</div>
+          </div>
+        </div>
+
+        <div class="quote-banner">
+          <div class="farmer-face">
+            <img src="images/slide15_farmer.jpg" alt="Smiling elderly farmer"
+              onerror="this.onerror=null; this.src='HK 2.0/images/slide15_farmer.jpg';">
+          </div>
+          <div class="quote-paragraph" data-editable>
+            “With structured technology, value addition, and policy support, Indian farmers transition from vulnerable
+            price-takers to thriving agri-entrepreneurs.”
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 16: Executive Vision Closing -->
+      <div class="slide-canvas slide-16" data-slide="16">
+        <span class="slide-num top-left" style="color: rgba(255,255,255,0.85);">16</span>
+        <img src="images/slide01_farmer.jpg" class="bg-photo" alt="Farmer looking at sunset crops"
+          onerror="this.onerror=null; this.src='HK 2.0/images/slide01_farmer.jpg';">
+        <div class="bg-overlay"></div>
+        <div class="content-layer">
+          <div class="header-row">
+            <div>
+              <h2 class="serif-title" data-editable>Healthier Farms • Happier Families • A Stronger India</h2>
+              <div class="green-bar"></div>
+            </div>
+            <div class="closing-sub" data-editable>
+              Building a sustainable, profitable, and resilient future for Indian agriculture.
+            </div>
+          </div>
+          <div class="footer-glass-bar">
+            <div class="pillar-item" data-editable>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+              <span>Farmers</span>
+            </div>
+            <div class="pillar-item" data-editable>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="8" r="6" />
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+              </svg>
+              <span>Food Security</span>
+            </div>
+            <div class="pillar-item" data-editable>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+              </svg>
+              <span>Public Health</span>
+            </div>
+            <div class="pillar-item" data-editable>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+              </svg>
+              <span>Ecology</span>
+            </div>
+            <div class="pillar-item" data-editable>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                <polyline points="17 6 23 6 23 12" />
+              </svg>
+              <span>Prosperity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FLOATING HUD IN PRESENTATION MODE -->
+  <div class="fullscreen-hud" id="fullscreenHud">
+    <button class="hud-btn" onclick="prevSlide()" title="Previous (Left Arrow / PageUp)">◀ Prev</button>
+    <span class="hud-counter" id="hudCounter">01 / 16</span>
+    <button class="hud-btn" onclick="nextSlide()" title="Next (Right Arrow / PageDown / Space)">Next ▶</button>
+    <button class="hud-btn hud-exit" onclick="exitPresentation()" title="Exit Presentation (Esc)">✕ Exit</button>
+  </div>
+
+  <script>
+    const totalSlides = 16;
+    let currentSlide = 1;
+    let isLiveEdit = false;
+    let isPresenting = false;
+    let hudTimeout = null;
+
+    function renderSlide(num) {
+      if (num < 1) num = 1;
+      if (num > totalSlides) num = totalSlides;
+      currentSlide = num;
+
+      // Update slide canvas visibility
+      const slides = document.querySelectorAll('.slide-canvas');
+      slides.forEach(slide => {
+        const slideNum = parseInt(slide.getAttribute('data-slide'));
+        if (slideNum === currentSlide) {
+          slide.classList.add('active');
+        } else {
+          slide.classList.remove('active');
+        }
+      });
+
+      // Update toolbar counters and dropdown
+      const padNum = String(currentSlide).padStart(2, '0');
+      const counterText = `${padNum} / ${totalSlides}`;
+      const elCounter = document.getElementById('slideCounterText');
+      if (elCounter) elCounter.textContent = counterText;
+
+      const hudCounter = document.getElementById('hudCounter');
+      if (hudCounter) hudCounter.textContent = counterText;
+
+      const dropdown = document.getElementById('slideDropdown');
+      if (dropdown) dropdown.value = currentSlide;
+
+      // Update button states
+      const btnPrev = document.getElementById('btnPrev');
+      const btnNext = document.getElementById('btnNext');
+      if (btnPrev) btnPrev.style.opacity = currentSlide === 1 ? '0.45' : '1';
+      if (btnNext) btnNext.style.opacity = currentSlide === totalSlides ? '0.45' : '1';
+
+      if (isLiveEdit) {
+        applyContentEditable();
+      }
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides) {
+        renderSlide(currentSlide + 1);
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlide > 1) {
+        renderSlide(currentSlide - 1);
+      }
+    }
+
+    function goToSlide(num) {
+      renderSlide(num);
+    }
+
+    // Toggle In-Browser Live Editing
+    function toggleLiveEdit() {
+      isLiveEdit = !isLiveEdit;
+      const btn = document.getElementById('btnLiveEdit');
+      if (isLiveEdit) {
+        btn.classList.add('btn-edit-active');
+        btn.innerHTML = '💾 Exit Editing';
+        applyContentEditable();
+      } else {
+        btn.classList.remove('btn-edit-active');
+        btn.innerHTML = '✏️ Edit In-Browser';
+        removeContentEditable();
+      }
+    }
+
+    function applyContentEditable() {
+      document.querySelectorAll('[data-editable]').forEach(el => {
+        el.setAttribute('contenteditable', 'true');
+      });
+    }
+
+    function removeContentEditable() {
+      document.querySelectorAll('[data-editable]').forEach(el => {
+        el.removeAttribute('contenteditable');
+      });
+    }
+
+    // Fullscreen Presentation Mode Engine
+    function startPresentation() {
+      isPresenting = true;
+      document.body.classList.add('is-presenting');
+
+      // Attempt browser fullscreen
+      const elem = document.documentElement;
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen().catch(() => { });
+      } else if (elem.webkitRequestFullscreen) {
+        elem.webkitRequestFullscreen();
+      }
+
+      showHudTemporarily();
+    }
+
+    function exitPresentation() {
+      isPresenting = false;
+      document.body.classList.remove('is-presenting');
+
+      if (document.fullscreenElement) {
+        if (document.exitFullscreen) {
+          document.exitFullscreen().catch(() => { });
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        }
+      }
+    }
+
+    // Listen for fullscreen exit via Escape key or browser controls
+    document.addEventListener('fullscreenchange', () => {
+      if (!document.fullscreenElement) {
+        isPresenting = false;
+        document.body.classList.remove('is-presenting');
+      }
+    });
+    document.addEventListener('webkitfullscreenchange', () => {
+      if (!document.webkitFullscreenElement) {
+        isPresenting = false;
+        document.body.classList.remove('is-presenting');
+      }
+    });
+
+    // Auto-hiding HUD logic
+    function showHudTemporarily() {
+      const hud = document.getElementById('fullscreenHud');
+      if (!hud) return;
+      hud.classList.add('hud-visible');
+      if (hudTimeout) clearTimeout(hudTimeout);
+      hudTimeout = setTimeout(() => {
+        hud.classList.remove('hud-visible');
+      }, 3000);
+    }
+
+    window.addEventListener('mousemove', () => {
+      if (isPresenting) {
+        showHudTemporarily();
+      }
+    });
+
+    // Keyboard Navigation
+    window.addEventListener('keydown', (e) => {
+      // Don't intercept typing when actively editing text
+      if (isLiveEdit && document.activeElement && document.activeElement.hasAttribute('contenteditable')) {
+        return;
+      }
+
+      if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+        e.preventDefault();
+        nextSlide();
+        if (isPresenting) showHudTemporarily();
+      } else if (e.key === 'ArrowLeft' || e.key === 'PageUp' || e.key === 'Backspace') {
+        e.preventDefault();
+        prevSlide();
+        if (isPresenting) showHudTemporarily();
+      } else if (e.key === 'Home') {
+        e.preventDefault();
+        renderSlide(1);
+      } else if (e.key === 'End') {
+        e.preventDefault();
+        renderSlide(totalSlides);
+      } else if (e.key === 'f' || e.key === 'F') {
+        if (!isPresenting) {
+          startPresentation();
+        } else {
+          exitPresentation();
+        }
+      } else if (e.key === 'Escape' && isPresenting) {
+        exitPresentation();
+      }
+    });
+
+    // Initialize deck on slide 1
+    renderSlide(1);
+  </script>
+
+</body>
+
+</html>
